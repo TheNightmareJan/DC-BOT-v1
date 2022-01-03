@@ -1,0 +1,42 @@
+@bot.command()
+@commands.is_nsfw()
+async def gif(ctx):
+    em = discord.Embed(title="Random gifs",description="",color=discord.Color.random())
+    em.set_image(url=f"{random.choice(GIF)}")
+    em.set_footer(text="Die Naricht löscht sich in 25 Sekunden!")
+    await ctx.send(embed=em,delete_after=25)
+    
+    
+    @bot.command()
+@commands.is_nsfw()
+async def sexy(ctx):
+    lines = open('Sexy.txt').read().splitlines()  # creates a list with one line per iteù
+    randomLine = random.choice(lines)
+    em = discord.Embed(title="Bilder",description="",color=discord.Color.random())
+    em.set_image(url=f"{random.choice(lines)}")
+    em.set_footer(text="Die Naricht löscht sich in 25 Sekunden!")
+    await ctx.send(embed=em,delete_after=25)
+    
+    
+    @bot.command()
+@commands.is_nsfw()
+async def hentai(ctx):
+    lines = open('hentai.txt').read().splitlines()  # creates a list with one line per iteù
+    randomLine = random.choice(lines)
+    em = discord.Embed(title="Bilder",description="",color=discord.Color.random())
+    em.set_image(url=f"{random.choice(lines)}")
+    em.set_footer(text="Die Naricht löscht sich in 25 Sekunden!")
+    await ctx.send(embed=em,delete_after=25)
+    
+    @bot.command()
+@commands.is_nsfw()
+async def bild(ctx):
+    lines = open('BILDER.txt').read().splitlines()  # creates a list with one line per iteù
+    randomLine = random.choice(lines)
+    em = discord.Embed(title="Bilder",description="",color=discord.Color.random())
+    em.set_image(url=f"{random.choice(lines)}")
+    em.set_footer(text="Die Naricht löscht sich in 25 Sekunden!")
+    await ctx.send(embed=em,delete_after=25)
+    
+    
+    
